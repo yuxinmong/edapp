@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ED</string>
+    <string name="confirm">确认</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_list_header_refresh_down">下拉刷新</string>
+    <string name="app_list_header_refreshing">正在刷新</string>
+    <string name="app_list_header_refresh_up">松开刷新</string>
+    <string name="app_list_header_refresh_last_update">上次更新于:%s</string>
+    <string name="app_list_footer_more">更多</string>
+    <string name="app_list_footer_loading">正在加载</string>
+    <string name="app_loading">请稍候，正在获取数据....</string>
+    <string name="refreshlistview_arrow">Content Description Arrow</string>
+    <string name="refreshlistview_updating">刷新中…</string>
+    <string name="refreshlistview_release">释放立即刷新…</string>
+    <string name="refreshlistview_pulldown">下拉刷新数据...</string>
+    <string name="refreshlistview_down">刷新成功</string>
+    <string name="refreshlistview_no_update">没有新数据</string>
+    <string name="refreshlistview_error">数据加载失败</string>
+    <string name="messagebox_information">信息</string>
+    <string name="messagebox_warning">警告</string>
+    <string name="messagebox_error">错误</string>
+    <string name="messagebox_ok">确定</string>
+    <string name="messagebox_cancel">取消</string>
+    <string name="messagebox_retry">重试</string>
+    <string name="error_no_internet_connectivity">没有互联网连接。</string>
+    <string name="error_no_response">网络请求没有响应。</string>
+    <string name="error_generic">一般软件错误。</string>
+    <string name="reload">重新加载</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="list_view_noData">无任何记录</string>
+    <string name="app_run_error">非常抱歉，发生软件运行错误，我们会尽快解决该问题，请关注版本更新。</string>
+    <string name="login">登录</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="userinfo">个人中心</string>
+    <string name="sex0">男</string>
+    <string name="sex1">女</string>
+    <string name="personal_info">闺房</string>
+    <!-- chensini -->
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="ed_content">我是内容我是内容我是内容我是内内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内内容我是内容我是内容我是内容。</string>
+         <string name="j_pickerview_cancel">取消</string>
+    <string name="j_pickerview_submit">确定</string>
+  <string name="clear_finish">清理完成</string>
+    <string name="clear_count">&#160;&#160;&#160;&#160;&#160;&#160;0M</string>
+</resources>

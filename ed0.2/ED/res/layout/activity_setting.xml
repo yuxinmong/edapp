@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_tilte_background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/comm_title_bar"
+        layout="@layout/common_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/personal_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/more_info"
+android:padding="@dimen/userinfo_padding"
+            android:text="个人资料"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/band_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/userinfo_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="绑定手机"
+                android:textColor="@color/normal_text"
+                android:textSize="@dimen/normal_font" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/more_info"
+                android:text="未绑定"
+                android:textColor="@color/normal_text"
+                android:textSize="@dimen/normal_font" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/userinfo_padding"
+            android:layout_marginLeft="@dimen/userinfo_padding"
+            android:paddingTop="@dimen/userinfo_padding"
+            android:paddingBottom="@dimen/userinfo_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="清空缓存"
+                android:textColor="@color/normal_text"
+                android:textSize="@dimen/normal_font" />
+
+            <TextView
+                android:id="@+id/clear_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/white_background"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/more_info"
+                android:text="3.45M"
+                android:textColor="@color/normal_text"
+                android:textSize="@dimen/normal_font" 
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/about_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background"
+            android:padding="@dimen/userinfo_padding"
+            android:text="关于ED"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" 
+                        android:drawableEnd="@drawable/more_info"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:background="@color/line" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="12dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:padding="@dimen/userinfo_padding"
+        android:text="打赏个五星好评"
+        android:textColor="@color/normal_text"
+        android:textSize="@dimen/normal_font"
+         android:drawableEnd="@drawable/more_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="12dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:padding="@dimen/userinfo_padding"
+        android:text="帮助"
+        android:textColor="@color/normal_text"
+        android:textSize="@dimen/normal_font"
+         android:drawableEnd="@drawable/more_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="12dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:padding="@dimen/userinfo_padding"
+        android:text="服务条款"
+        android:textColor="@color/normal_text"
+        android:textSize="@dimen/normal_font" 
+         android:drawableEnd="@drawable/more_info"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_background"
+        android:orientation="vertical"
+        android:layout_marginEnd="0dp"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_apply_back"
+            android:gravity="center"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            android:text="退出登录"
+            android:textColor="@color/able"
+            android:textSize="@dimen/normal_font"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+</LinearLayout>

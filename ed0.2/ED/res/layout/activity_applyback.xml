@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_tilte_background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/comm_title_bar"
+        layout="@layout/common_titlebar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tv_selector"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="请退货并填写个人信息"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/normal_font" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tv_selector"
+        android:padding="10dp"
+        android:text="1.请退货"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/normal_font" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tv_selector"
+        android:paddingLeft="20dp"
+        android:text="未经买家同意请不要使用到付或平邮"
+        android:textColor="@color/text_hit"
+        android:textSize="@dimen/text_10sp_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp "
+        android:paddingTop="5dp"
+        android:text="退货地址：广东省深圳市深南大道深南大道深南大道深南大道时代公寓动B1060"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/normal_font" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white_background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="2.请填写退货物流信息"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/normal_font" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white_background"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp "
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="退货原因："
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/normal_font" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/shape_apply_back_black"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/normal_font" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp
+        "
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="退货说明："
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/normal_font" />
+         <TextView
+             android:id="@+id/input_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="(0/200字)"
+            android:textColor="@color/text_hit"
+            android:textSize="@dimen/text_12sp_size" 
+            android:layout_marginLeft="5dp"/>
+</LinearLayout>
+        <EditText
+            android:id="@+id/input_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/shape_apply_back_black"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/normal_font" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/uploadimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="20dp
+        "
+            android:text="上传照片："
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/normal_font" />
+
+
+<GridView
+            android:id="@+id/gridView1"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+                        android:layout_marginLeft="100dp"
+            
+            android:background="@color/white_background"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </GridView>
+        <TextView
+            android:id="@+id/apply_back_save"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_apply_back"
+            android:gravity="center"
+            android:text="提交退货信息"
+            android:textColor="@color/able"
+            android:textSize="@dimen/normal_font"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

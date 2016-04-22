@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ed.v1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="12" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序访问有关的网络信息 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 允许程序访问Wi-Fi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许应用写（非读）用户的外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取电话的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- GPS定位权限(非必选，由应用选择是否需要) -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 允许程序读取用户联系人数据(非必选，由应用选择是否需要) -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 允许访问振动设备(非必选,由应用选择是否需要) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.carelinker.pharmacy.v2" />
+
+    <permission
+        android:name="getui.permission.GetuiService.com.carelinker.pharmacy.v2"
+        android:protectionLevel="normal" >
+    </permission>
+<!--  imageloader -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Include next permission if you want to allow UIL to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 定位所需的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 推送相关的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".CLApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="LOGGING"
+            android:value="true" />
+        <meta-data
+            android:name="ALPHA"
+            android:value="true" />
+
+        <activity
+            android:name=".ui.main.HomeTabActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+               <activity
+                android:name=".ui.main.HomeTabActivity"
+                android:launchMode="singleTop"
+                android:label="@string/login"
+                android:windowSoftInputMode="adjustPan" 
+                android:theme="@android:style/Theme.Black.NoTitleBar"
+                android:screenOrientation="portrait" >
+        </activity>
+        -->
+
+  
+
+
+        <!-- userinfo -->
+        <activity
+            android:name=".ui.userinfo.UserInfoActivity"
+            android:label="@string/userinfo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.userinfo.OrderActivity"
+            android:label="@string/userinfo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.userinfo.UserSetActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.userinfo.PictureShowActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.example.zhy_horizontalscrollview03.BuyerShowGalleryActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.ed.v1.ui.userinfo.express.ExpressActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.widget.timeline.OrderStateActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.buyer.UPToTopActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.buyer.ShowGalleryActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".ui.userinfo.HeaderBgActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".ui.userinfo.UserLikeActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".ui.userinfo.AdressActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".ui.userinfo.AddAdressActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".ui.userinfo.ThreeDActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+             android:theme="@style/translucent" />
+          <activity
+            android:name=".ui.userinfo.ApplyBackActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+             android:theme="@android:style/Theme.Light.NoTitleBar" />
+            <activity
+            android:name=".ui.userinfo.AboutActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+             android:theme="@android:style/Theme.Light.NoTitleBar" />
+              <activity
+            android:name=".ui.userinfo.HelpActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+             android:theme="@android:style/Theme.Light.NoTitleBar" />
+                    <activity
+            android:name=".ui.userinfo.BandPhoneActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+             android:theme="@android:style/Theme.Light.NoTitleBar" />
+                             <activity
+            android:name=".ui.userinfo.UpdataUserinfoActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+             android:theme="@android:style/Theme.Light.NoTitleBar" />
+                                             <activity
+            android:name=".ui.userinfo.ServiceActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+             android:theme="@android:style/Theme.Light.NoTitleBar" />
+                                                                               <activity
+            android:name=".ui.userinfo.OderInfoActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+             android:theme="@android:style/Theme.Light.NoTitleBar" />
+    </application>
+
+</manifest>

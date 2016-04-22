@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/comm_tilte_background">
+
+    <include
+        android:id="@+id/comm_title_bar"
+        layout="@layout/common_titlebar" />
+
+    <RelativeLayout
+                android:id="@+id/edit_mail_lv"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" 
+        android:background="@color/white_background">
+
+        <EditText
+            android:id="@+id/edit_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_apply_back_gray"
+            android:hint=" 请输入您的常用邮箱"
+            android:padding="10dp"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/delete_input_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:src="@drawable/delete_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit_name_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+         android:background="@color/white_background" >
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_apply_back_gray"
+            android:hint=" 请输入姓名"
+            android:padding="10dp"
+            android:textSize="13sp"
+             />
+
+        <ImageView
+            android:id="@+id/delete_input_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:src="@drawable/delete_text" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_age_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clipChildren="false"
+            android:background="@color/white_background" >
+        </RelativeLayout>
+
+
+</LinearLayout>

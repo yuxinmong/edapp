@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_tilte_background"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <include
+        android:id="@+id/comm_title_bar"
+        layout="@layout/common_titlebar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/user_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/white_background"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/user_drugStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头像"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" />
+
+            <com.ed.v1.common.widget.CircleImageView
+                android:id="@+id/user_header"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/more"
+                android:src="@drawable/user_l" />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/more_info" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/user_name_lt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white_background"
+          android:paddingLeft="12dp"
+            android:paddingRight="12dp"  >
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="姓名"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" />
+
+            <TextView
+                android:id="@+id/input_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/more_info"
+                android:text="彭彩萍"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/user_sex_lt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white_background"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/user_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" />
+
+            <TextView
+                android:id="@+id/input_user_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:hint="女"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" 
+               android:paddingRight="15dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/user_age_lt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white_background"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"  >
+
+            <TextView
+                android:id="@+id/user_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="生日"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" />
+
+            <TextView
+                android:id="@+id/input_user_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/more_info"
+                android:hint="出生日期"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/user_mail_lt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@color/white_background"
+          android:paddingLeft="12dp"
+            android:paddingRight="12dp"  >
+
+            <TextView
+                android:id="@+id/user_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="邮箱"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" />
+
+            <TextView
+                android:id="@+id/input_user_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/more_info"
+                android:text="未填写"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/Qr_code_card_lt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@color/white_background"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/Qr_code_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="注册日期"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/normal_font" />
+
+            <TextView
+                android:id="@+id/input_qr_code_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2016.11.05"
+                  android:textColor="@color/text_black" 
+                  android:paddingRight="15dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+ <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="0dp"
+        android:background="@color/white_background"
+        android:orientation="vertical" >
+
+      
+    </LinearLayout>
+
+</LinearLayout>

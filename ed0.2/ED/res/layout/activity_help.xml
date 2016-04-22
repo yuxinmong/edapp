@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_tilte_background"
+    android:orientation="vertical"
+        android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <include
+        android:id="@+id/comm_title_bar"
+        layout="@layout/common_titlebar" />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white_background"
+    android:orientation="vertical" >
+    <SearchView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_apply_back_gray"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="搜索"
+        android:textColor="@color/hint_text"
+        android:focusable="false" />
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:padding="10dp"
+        android:text="常见热点问题"
+        android:textColor="@color/hint_text" />
+    <ListView
+		android:id="@+id/lv"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:scrollbars="none"
+		android:fadingEdge="none"/>
+</LinearLayout>
+  
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none" 
+        android:visibility="gone">
+    </ListView>
+
+</LinearLayout>

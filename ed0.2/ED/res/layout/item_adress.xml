@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_background"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:descendantFocusability="blocksDescendants">
+  <ImageView 
+      android:id="@+id/selector_add_adress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/selector_add_adress"
+      android:layout_gravity="center_vertical"
+      android:padding="10dp"/>  
+
+<LinearLayout
+    android:layout_width="245dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:id="@+id/user_phone_lt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_background"
+              android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="陆某某 "
+                android:textColor="@color/normal_text"
+                />
+
+            <TextView
+                android:id="@+id/input_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:inputType="phone"
+                android:text="15273220738"
+                android:textColor="@color/normal_text"
+               />
+
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/adress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="广东省深圳大道南山公寓时代南山公寓时代 南山公寓时代小区1082号"
+                android:textColor="@color/normal_text"
+                 />
+</LinearLayout>
+ <ImageView 
+      android:id="@+id/update_adress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/unselector_bg_header"
+      android:layout_gravity="bottom|right"
+      android:padding="10dp"
+  />  
+</LinearLayout>

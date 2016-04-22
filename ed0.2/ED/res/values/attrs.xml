@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义圆形图像边缘属性 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <attr name="attrIconCall" format="reference" />
+    <attr name="CCPactionMenuTextAppearance" format="reference" />
+    <!-- Color for text that appears within action menu items. -->
+    <attr name="CCPactionMenuTextColor" format="color|reference" />
+
+    <declare-styleable name="MaskLayout">
+        <attr name="foreground" format="reference" />
+        <attr name="content_margin" format="dimension" />
+        <attr name="content_marginLeft" format="dimension" />
+        <attr name="content_marginRight" format="dimension" />
+        <attr name="content_marginTop" format="dimension" />
+        <attr name="content_marginBottom" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AppPanel">
+        <attr name="dot_count" format="dimension" />
+        <attr name="dot_selected" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="form_input">
+        <attr name="form_layout" format="reference" />
+        <attr name="form_title" format="string" />
+        <attr name="form_hint" format="string" />
+    </declare-styleable>
+
+    <attr name="attrBgSelectedLetter" format="reference" />
+
+    <declare-styleable name="setting_info">
+        <attr name="item_titleText" format="string" />
+        <attr name="item_detailText" format="string" />
+        <attr name="item_accessoryType">
+            <enum name="none" value="0" />
+            <enum name="arrow" value="1" />
+            <enum name="switchbutton" value="2" />
+            <enum name="radio" value="3" />
+        </attr>
+        <attr name="item_showDivider" format="boolean" />
+    </declare-styleable>
+ 
+    <declare-styleable name="Emojicon">
+        <attr name="emojiconSize" format="dimension" />
+        <attr name="emojiconTextStart" format="integer" />
+        <attr name="emojiconTextLength" format="integer" />
+        <attr name="emojiconUseSystemDefault" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+    <declare-styleable name="call_control">
+        <attr name="call_direct">
+            <enum name="incoming" value="0" />
+            <enum name="outgoing" value="1" />
+            <enum name="inCall" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SpinnerView">
+        <attr name="Spinner_item" format="reference" />
+        <attr name="Spinner_DropDownTitle" format="reference" />
+    </declare-styleable>
+    <!-- 自定义圆角图片 -->
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+<!--      左右滑动导航栏 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+<!-- pulltorefresh -->
+  <declare-styleable name="PullToRefresh">
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    
+     <declare-styleable name="FamiliarRecyclerView">
+        <attr name="frv_divider" format="reference|color" />
+        <attr name="frv_dividerVertical" format="reference|color" />
+        <attr name="frv_dividerHorizontal" format="reference|color" />
+        <attr name="frv_dividerHeight" format="dimension" />
+        <attr name="frv_dividerVerticalHeight" format="dimension" />
+        <attr name="frv_dividerHorizontalHeight" format="dimension" />
+        <attr name="frv_itemViewBothSidesMargin" format="dimension" />
+        <attr name="frv_emptyView" format="reference" />
+        <attr name="frv_isEmptyViewKeepShowHeadOrFooter" format="boolean" />
+        <attr name="frv_layoutManager" format="enum">
+            <enum name="linear" value="0" />
+            <enum name="grid" value="1" />
+            <enum name="staggeredGrid" value="2" />
+        </attr>
+        <attr name="frv_layoutManagerOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="frv_spanCount" format="integer" />
+        <attr name="frv_isReverseLayout" format="boolean" />
+        <attr name="frv_headerDividersEnabled" format="boolean" />
+        <attr name="frv_footerDividersEnabled" format="boolean" />
+        <attr name="frv_isNotShowGridEndDivider" format="boolean" />
+    </declare-styleable>
+
+</resources>

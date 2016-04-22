@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_tilte_background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/comm_title_bar"
+        layout="@layout/common_titlebar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/user_lt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@color/white_background"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系人"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" />
+
+        <EditText
+            android:id="@+id/input_user_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="您的姓名"
+            android:inputType="phone"
+            android:paddingLeft="80dp"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" />
+
+        <requestFocus />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/adress_lt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@color/white_background"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="收货地址"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" />
+
+        <EditText
+            android:id="@+id/input_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/user_adress"
+            android:inputType="phone"
+            android:paddingLeft="80dp"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" />
+
+        <requestFocus />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/user_more_adress_lt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@color/white_background"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/more_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系人"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" />
+
+        <EditText
+            android:id="@+id/input_more_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="请输入包括门牌号在内的详细地址"
+            android:inputType="phone"
+            android:paddingLeft="80dp"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" />
+
+        <requestFocus />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/user_phone_lt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@color/white_background"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="手机号 "
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" />
+
+        <EditText
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="快递人员可以联系到您的方式"
+            android:inputType="phone"
+            android:paddingLeft="80dp"
+            android:textColor="@color/normal_text"
+            android:textSize="@dimen/normal_font" />
+
+        <requestFocus />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white_background"
+        android:gravity="center"
+        android:text="删除该地址"
+        android:textColor="@color/able"
+        android:textSize="@dimen/normal_font"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_background" />
+
+</LinearLayout>

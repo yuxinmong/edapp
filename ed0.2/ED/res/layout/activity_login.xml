@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_background">
+    <include android:id="@+id/top_bar" layout="@layout/common_titlebar"/>
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_bar"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:orientation="vertical">
+        
+         <TextView 
+		                android:layout_width="match_parent"
+		                android:layout_height="100dp"
+		                android:layout_gravity="center"
+		                android:textSize="@dimen/im_font"
+		                android:textColor="@color/black_text"
+		                android:text="使用手机号登陆"
+		                android:gravity="center"
+		                />   
+			<LinearLayout 
+            android:id="@+id/login_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            
+            android:orientation="horizontal">
+            
+          
+            <EditText
+                    android:id="@+id/edtPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入您的手机号码"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:textSize="@dimen/im_font"
+                    android:textColor = "@color/black_text"
+                    android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <RelativeLayout 
+            android:id="@+id/check_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+           
+            <LinearLayout 
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <View 
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/line"/>
+                <FrameLayout 
+                    android:id="@+id/send_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center">
+                    <TextView 
+                        android:id="@+id/code_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:textSize="@dimen/im_font"
+		                android:textColor="@color/black_text"
+		                android:text="获取验证码"/>
+                    <TextView 
+                        android:id="@+id/wait_time"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:textSize="@dimen/im_font"
+		                android:textColor="@color/black_text"
+		                android:text="60"
+		                android:visibility="gone"/>
+                </FrameLayout>
+            
+            </LinearLayout>
+            
+            <EditText
+                    android:id="@+id/edtCheckCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="验证码"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:layout_toRightOf="@id/hint_text"
+                    android:layout_toLeftOf="@id/linear"
+                    android:inputType="number"
+                    android:textSize="@dimen/im_font"
+                    android:textColor = "@color/black_text"
+                    android:background="@android:color/transparent"/>
+            
+        </RelativeLayout>
+
+            <Button
+                    android:id="@+id/btnRegister"
+                    android:background="@drawable/selector_button_bg_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:padding="10dp"
+                    android:text="登陆"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/big_font"/>
+             <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+             <View 
+                   
+	                android:layout_width="30dp"
+	                android:layout_height="1dp"
+	                android:background="@color/gray_line"
+	                android:layout_gravity="center_vertical"
+	                />
+                <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="@dimen/small_font"
+	                android:textColor="@color/explain_text"
+	                android:text="首次登陆课立即获得"
+	                android:layout_gravity="center"/>
+                <View 
+                   
+	                android:layout_width="30dp"
+	                android:layout_height="1dp"
+	                android:background="@color/gray_line"
+	                	                android:layout_gravity="center_vertical"
+	                />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="@dimen/small_font"
+	                android:textColor="@color/explain_text"
+	                android:text="我同意《ED服务协议》客服电话：0755-26656354"/>
+                <TextView 
+                    android:id="@+id/readme"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="@dimen/small_font"
+	                android:textColor="@color/important_text"
+	                android:text="《注册协议》"/>
+            </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/transparent_background"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <LinearLayout
+        android:id="@+id/menu_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部订单"
+                android:textColor="@color/white_text"
+                android:textSize="@dimen/menu_userinfo" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/setting_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/bg_oder_count"
+                    android:text="99"
+                    android:gravity="center"
+                    android:textColor="@color/white_background"
+                    android:textSize="10sp" />
+            
+      
+
+                <TextView
+                    android:id="@+id/menu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/titlebar_margin"
+                    android:text="待付款"
+                    android:textColor="@color/white_text"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/menu_userinfo" />
+          
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/menu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已付款"
+                android:textColor="@color/white_text"
+                android:textSize="@dimen/menu_userinfo" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/menu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已过期"
+                android:textColor="@color/white_text"
+                android:textSize="@dimen/menu_userinfo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

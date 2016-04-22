@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+     android:background="@color/comm_tilte_background">
+
+    <include
+        android:id="@+id/comm_title_bar"
+        layout="@layout/common_titlebar" />
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" 
+         android:scrollbars="none"
+         android:background="@color/white_background">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white_background"
+    android:padding="10dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white_background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:gravity="center"
+        android:text="宜定服务协议"
+        android:textSize="18sp"
+        android:textColor="@color/text_black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white_background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:text="@string/ed_content"
+        android:textColor="@color/text_black" 
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="2.5dp"/>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:text="一.服务内容"
+        android:textColor="@color/text_black"
+         android:paddingLeft="2.5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white_background" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:text="@string/ed_content"
+        android:textColor="@color/text_black" 
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="2.5dp"/>
+         <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white_background" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:text="二.内容使用"
+        android:textColor="@color/text_black"
+        android:paddingLeft="2.5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white_background" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_background"
+        android:text="@string/ed_content"
+        android:textColor="@color/text_black" 
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="2.5dp"/>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

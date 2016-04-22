@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <EditText 
+        android:id="@+id/editView1"
+        android:layout_width="61dp"
+        android:layout_height="19dp"
+      android:gravity="center"
+      android:background="@drawable/selector_three_d" 
+      android:textSize="12sp"
+      android:textColor="@drawable/selector_three_d_text"/>
+ <ImageView 
+        android:id="@+id/addView"
+        android:layout_width="61dp"
+        android:layout_height="19dp"
+       android:focusable="false"
+       android:background="@drawable/three_d_add"
+       android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_background" >
+    
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:clipChildren="false"
+            android:gravity="center_horizontal"
+            android:layerType="software"
+            android:orientation="horizontal" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="188dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="2.5dp"
+                android:clipChildren="false" >
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/transparent"
+            android:clipChildren="false"
+            android:gravity="center_horizontal"
+            android:layerType="software"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="82.5dp"
+                android:layout_height="213.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/left_gredient" />
+
+            <View
+                android:layout_width="82.5dp"
+                android:layout_height="213.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/right_gredient" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/left" />
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+<View 
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+      android:background="@color/white_background" />
+    <ImageView
+        android:layout_width="339dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoline"
+        android:background="@color/white_background" />
+<View 
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+      android:background="@color/white_background" />
+</LinearLayout>

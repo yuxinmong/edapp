@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_tilte_background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        layout="@+layout/common_titlebar" >
+    </include>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/user_age_lt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/comm_tilte_background"
+            android:gravity="center_horizontal" >
+
+            <com.handmark.pulltorefresh.library.WanRecycleView
+                android:id="@+id/cv_refreshListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white_background" >
+
+                <TextView
+                    android:id="@+id/input_user_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:lines="1"
+                    android:paddingLeft="5dp"
+                    android:text="人气买家秀第一名,可6个月内免费定制2套衣服！"
+                    android:textColor="@color/gray_text"
+                    android:textSize="10.7sp" />
+
+                <TextView
+                    android:id="@+id/jion"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@color/able"
+                    android:gravity="center"
+                    android:text="我要报名"
+                    android:textColor="@color/white_text"
+                    android:textSize="@dimen/normal_font" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

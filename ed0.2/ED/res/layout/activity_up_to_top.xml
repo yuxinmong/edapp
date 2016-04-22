@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_tilte_background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white_background"
+        android:orientation="vertical"
+        android:paddingBottom="30dp" >
+
+      
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            layout="@+layout/common_titlebar" />
+
+        <TextView
+            android:id="@+id/input_user_age"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/white_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="我已购买的商品（可选择晒单所对应的商品）"
+            android:textColor="@color/gray_text"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:background="@color/white_background"
+           android:layout_marginBottom="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/comm_tilte_background" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/white_background" >
+
+            <EditText
+                android:id="@+id/input_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white_background"
+                android:gravity="top"
+                android:hint="这一刻的上榜感言"
+                android:paddingLeft="10dp"
+                android:paddingRight="70dp"
+                android:paddingTop="5dp"
+                 android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/input_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="0/100"
+                android:textColor="@color/hint_text" 
+                android:textSize="@dimen/text_12sp_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_background"
+        android:orientation="vertical" >
+        
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:background="@color/white_background"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:paddingLeft="15dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </GridView>
+  <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="点击+号可添加图片"
+            android:textColor="@color/gray_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/jion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/able"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/normal_font" />
+    </LinearLayout>
+
+</RelativeLayout>

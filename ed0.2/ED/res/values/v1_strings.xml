@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_ack_msg">已读</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_smile">表情</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_file">文件</string>
+    <string name="user_card">名片</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="send_fail">发送消息失败,</string>
+    <string name="delete_message">删除消息</string>
+    <string name="copy_message">复制消息</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="delete_video">删除视频</string>
+    <string name="delete">删除</string>
+    <string name="resend">重发</string>
+    <string name="confirm_resend">确认重发该信息？</string>
+    <string name="connect_failuer_toast">连接不到服务器，请稍后重试</string>
+    <string name="network_unavailable">网络连接不可用，请检查网络</string>
+    <string name="copy">复制</string>
+    <string name="forward">转发</string>
+    <string name="button_logout">退出登录</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="clear_records">清空记录</string>
+    <string name="clear_all_records">是否清空所有聊天记录？</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="recording_video">录制视频</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="voice">[语音]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_save">保存</string>
+    <string name="button_search">查找</string>
+    <string name="button_add">添加</string>
+    <string name="search_header">S</string>
+    <string name="network_isnot_available">网络不可用</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+
+    <string name="confirm_forward_to">确定转发到：%1$s ?</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_hint">退出后不会删除任何历史数据，下次登录依然可以使用本账号</string>
+    <string name="exit_group_hint">退出后，将不再接收此群聊信息</string>
+    <string name="dissolution_group_hint">退出后，此群将被解散</string>
+    <string name="exit_group">退出</string>
+    <string name="connect_conflict">同一帐号已在其他设备登录</string>
+    <string name="company_name_en">©CareLinker</string>
+    <string name="company_name_cn">©蓝信康医疗科技有限公司 </string>
+   
+    <string name="button_scan">搜索设备</string>
+    <string name="bt_not_enabled_leaving">无法开启蓝牙适配器</string>
+    <string name="bluetooth_bondnone">未绑定</string>
+    <string name="bluetooth_bonding">正在绑定</string>
+    <string name="bluetooth_bonded">已绑定</string>
+    <string name="bluetooth_state_unknown">未知状态</string>
+    <string name="socket_connecting">正在连接服务器</string>
+    <string name="socket_connected">已连接服务器</string>
+    <string name="socket_uploading">正在上传数据</string>
+    <string name="socket_done">已上传至服务器</string>
+    <string name="socket_send_failed">上传失败</string>
+    <string name="title_activity_bloodpressure">BloodPressure</string>
+    <string name="title_activity_bloodpressureinput">BloodPressureInput</string>
+    <string name="title_activity_bloodpressureinput_result">BloodPressureInputResult</string>
+    <string name="title_activity_bloodsugerinput">BloodSugerInput</string>
+    <string name="title_activity_bloodsugerinput_result">BloodSugerInputResult</string>
+    <string name="title_activity_beilis_bpresult">BeilisBPResultActivity</string>
+    <string name="title_activity_user">UserActivity</string>
+
+    <!-- whj add start -->
+    <string name="toast_crash_alert">很抱歉，程序遭遇异常，即将退出</string>
+    <string name="remember_password">记住密码</string>
+    <string name="phone_number">手机号</string>
+    <string name="user_name">手机号</string>
+    <string name="pharmacy_name">药店账号</string>
+    <string name="password">密码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="forget_password_button">重置密码</string>
+    <string name="jump_entry">快速使用</string>
+    <string name="regist_title">注册</string>
+    <string name="doctor_user">医生用户</string>
+    <string name="normal_user">普通用户</string>
+    <string name="input_verify_code">输入六位验证码</string>
+    <string name="input_password">输入密码</string>
+    <string name="input_confirm_password">确认密码</string>
+    <string name="send_verify_code">发送验证码</string>
+    <string name="phone_number_empty">电话号码不能为空</string>
+    <string name="password_empty">密码不能为空</string>
+    <string name="confirm_password_empty">确认密码不能为空</string>
+    <string name="same_password_empty">确认密码和密码不相同</string>
+    <string name="verify_code_empty">验证码不能为空</string>
+    <string name="test_history">健康测量</string>
+    <string name="health_knowledge">健康建议</string>
+    <string name="health_zone">健康咨询</string>
+    <string name="health_record">健康档案</string>
+    <string name="good_dawn">凌晨好，%1$s</string>
+    <string name="good_forenoon">早上好，%1$s</string>
+    <string name="good_morning">上午好，%1$s</string>
+    <string name="good_moon">中午好，%1$s</string>
+    <string name="good_afternoon">下午好，%1$s</string>
+    <string name="good_nightfall">傍晚好，%1$s</string>
+    <string name="good_evening">晚上好，%1$s</string>
+    <string name="good_midnight">深夜好，%1$s</string>
+    <string name="user_info">健康档案</string>
+    <string name="measure_1">血压</string>
+    <string name="measure_2">血糖</string>
+    <string name="measure_3">强生血糖仪</string>
+    <string name="measure_4">体脂</string>
+    <string name="not_open">暂未开放，敬请期待</string>
+    <string name="resend_with_time">%1$s秒</string>
+    <string name="conversation">在线咨询</string>
+    <string name="doctors">在线医生</string>
+    <string name="near_doctors">附近药店</string>
+    <string name="settings">设置</string>
+    <string name="add_friends">添加好友</string>
+    <string name="use_now">开始使用</string>
+    <string name="start_test">健康追踪</string>
+    <string name="measure_pressure">血压测量</string>
+    <string name="measure_pressure2">血糖测量</string>
+    <string name="measure_pressure3">体脂测量</string>
+    <string name="visitor_use_alert">此功能需要登录后才能使用</string>
+    <string name="no_data">无测试数据</string>
+    <string name="health_base_countdown">蓝信康祝您身体健康。\n %1$s秒后自动进入。</string>
+    <string name="health_base_info">蓝信康祝您身体健康</string>
+    <string name="visitor_alert">注：您的手机号将被用做保存测量记录的身份标示。您可以通过手机号码获取电子或纸质的测量历史记录，详情请咨询店员。</string>
+    <string name="health_warning">健康建议</string>
+    <string name="health_nutrition">营养方案</string>
+    <string name="health_promotion">促销信息</string>
+    <string name="health_sport">运动建议</string>
+    <string name="health_tips">健康贴士</string>
+    <string name="have_no_message">无消息</string>
+    <string name="doctor_info">医生信息</string>
+    <string name="pharmacist_info">药师信息</string>
+    <string name="subject">主治科目</string>
+    <string name="doctor_contact_way">联系方式</string>
+    <string name="doctor_address">地址：%1$s</string>
+    <string name="doctor_call">电话：%1$s</string>
+    <string name="pre_test">上次测量：</string>
+    <string name="start_testing">测量中...</string>
+    <string name="tested_result">您的测试结果</string>
+    <string name="see_result">历史记录</string>
+    <string name="device_connecting">连接中...</string>
+    <string name="normal">正常</string>
+    <string name="high_1">1级</string>
+    <string name="high_2">2级</string>
+    <string name="high_3">3级</string>
+    <string name="low_1">偏低</string>
+    <string name="low_2">很低</string>
+    <string name="tests_history">历史血压记录</string>
+    <string name="tests_history2">历史血糖记录</string>
+    <string name="day">日</string>
+    <string name="month">月</string>
+    <string name="week">周</string>
+    <string name="year">年</string>
+    <string name="season">季</string>
+    <string name="history_count_season">您本季共进行了%1$s次测量</string>
+    <string name="history_count_week">您本周共进行了%1$s次测量</string>
+    <string name="history_count_month">您本月共进行了%1$s次测量</string>
+    <string name="time_bar">(时间点)</string>
+    <string name="systolic_pulse">收缩压</string>
+    <string name="diastolic_pulse">舒张压</string>
+    <string name="head_pulse">心率</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="brithday">年龄</string>
+    <string name="hit_name">请输入您的名字</string>
+    <string name="hit_height">请输入您的身高</string>
+    <string name="hit_weight">请输入您的体重</string>
+    <string name="hit_brithday">请输入您的生日</string>
+    <string name="hit_year">请输入您的岁数</string>
+    <string name="edit_cannot_empty">输入信息不能为空</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="old">岁</string>
+
+    <!-- whj add end -->
+
+
+    <!-- sinocare related string -->
+    <string name="sinocare_error_E1"></string>
+    <string name="sinocare_error_E2"></string>
+    <string name="sinocare_error_E3"></string>
+    <string name="sinocare_error_HI">超出仪器量程</string>
+    <string name="sinocare_error_LO">低于仪器量程</string>
+    <string name="title_activity_sinocare_wl1">SinocareWL1Activity</string>
+    <string name="state_wake_up">早起</string>
+    <string name="state_before_meal">餐前</string>
+    <string name="state_after_meal">餐后</string>
+    <string name="state_before_sleep">睡前</string>
+    <string name="please_select_measure_time">请选择测量时段</string>
+    <string name="bluetooth_connecting">正在连接设备</string>
+    <string name="please_drop_blood">请滴血测量</string>
+    <string name="please_insert_strip">请插入试纸</string>
+    <string name="yes">确定</string>
+    <string name="item_you_choose">您选择的是</string>
+    <string name="please_wait">请稍候</string>
+    <string name="medicine_tips">服药提醒</string>
+    <string name="suger_start_measure">请滴血测量</string>
+    <string name="all">全部</string>
+    <!-- update -->
+    <string name="newversion">发现新版本</string>
+    <string name="version">版本号</string>
+    <string name="size">大小</string>
+    <string name="time">发布时间</string>
+    <string name="sign">&#160;:&#160;</string>
+    <string name="line">\n</string>
+    <string name="mobile">当前处于移动网络状态，下载会消耗手机流量，建议切换至无线网络。</string>
+    <string name="needdownload">是否立即下载?</string>
+    <string name="update">软件更新</string>
+    <string name="needupdate">是否立即更新?</string>
+    <string name="vipcard">会员卡</string>
+    <string name="smoke">吸烟</string>
+    <string name="drink">饮酒</string>
+    <string name="familyphone">紧急联系人电话</string>
+    <string name="allergic_custom">自定义过敏史</string>
+    <string name="notice">        我们真诚邀请您参加“数字化健康管理系统对慢病的管理”服务系统。\n
+   \n
+   •为了给您提供部分在线服务及个性化服务，我们会通过本产品对您的健康数据进行收集。\n
+   •我们收集和使用您的健康数据来运行或改进我们为您提供的服务。例如，为您提供慢病健康评估，为您提供个性营养方案等。\n
+   •本系统推送的任何健康信息都仅供您本人参考，不作为任何医疗建议; 如您需要专业的药物和医疗建议，请咨询相关疾病的专业医生和店内执业药师\n
+   •您本人的资料和信息，我方不会泄露给第三方,仅作为内部项目分析所用，以提高整体服务系统的质量和参与者的满意度。\n
+   •在采集的您个人的健康数据可能会由于您的采集姿势和当日测量时间等因素不同产生差异，这些数据仅作为后台风险监控的参考，不作为个人病情诊断的用途。\n
+   •参加该项目完全属于自愿。在享受免费服务的同时，您可以随时退出\n
+   •我们会尽最大努力保护您的健康数据的安全，但由于互联网安全环境的复杂性，我们无法就此事做出保证。\n
+   •如果您对本服务平台有任何建议，可以拨打服务热线400-6190069(手机)或者800-6190069(固话) , 我们的后台客服人员会耐性倾听您的任何建议或者投诉。\n
+   •请按照专业医生的诊疗建议，本服务平台不可替代医生专业诊断和治疗建议\n
+   •如相关症状加重或出现新症状，应立即就医。\n
+   	                                                         嘉兴蓝信康医疗科技有限公司
+</string>
+    <string name="noticetext"><u>知情同意书</u></string>
+    <string name="error">测量失败</string>
+    <string name="error2">请重新测量</string>
+    <string name="insert_page_measure">请插入试纸\n并滴血测量</string>
+    <string name="data_syning">测量数据正\n在同步中</string>
+    <string name="ble_not_supported">您的手机不支持此设备。</string>
+    <string name="title_activity_bingli">BingliActivity</string>
+    <string name="title_activity_yao">YaoActivity</string>
+    <string name="title_activity_show_picture">ShowPicture</string>
+    <string name="title_activity_picture">PictureActivity</string>
+    <string name="pharmacy_notice">       药店账号一般为您药店的座机号码或慢病专员的手机号码，如不清楚自己的药店账号请通过微信或热线电话进行咨询：\n
+	400-6190069（手机）\n
+	800-6190069（固话）\n
+	若您继续使用匿名登录，将会有风险造成数据统计缺失，尽请谅解。\n
+</string>
+    <string name="xueya_desc">        注：\n
+        1.一台设备只能绑定一位用户；\n
+        2.如果您已更换设备，请及时更新您的设备码；\n
+        3.设备号哪里找\n
+                    \t 如果您已经有一台蓝信康GPRS血压计，  设备号位于血压计的背面，     请将设备反转，     并且输入十四位数字。
+</string>
+    <string name="retry">重新测量</string>
+    <string name="weight_alert">请赤脚站上体脂仪</string>
+    <string name="weight_alert2">请不要下称，体脂分析进行中</string>
+    <string name="weight_alert3">为了进行体脂分析，请进入“健康档案”，录入以下基本信息:</string>
+    <string name="fat_weight">体重:%1$skg</string>
+    <string name="fat_zhifanglv">脂肪率:%1$s%%</string>
+    <string name="fat_jirouliang">肌肉量:%1$s%%</string>
+    <string name="fat_shuifenlv">水分率:%1$s%%</string>
+    <string name="fat_guliang">骨量:%1$skg</string>
+    <string name="fat_bmr">BMR:%1$s卡路里</string>
+    <string name="fat_neizangdengji">内脏等级:%1$s级</string>
+    <string name="fat_bmi">BMI:%1$s%%</string>
+    <string name="user_info_error">个人信息下载失败</string>
+    <string name="weight_result_alert">你的身体处于%1$s状态，具体健康建议可参考运动建议和营养方案</string>
+    <string name="more_weight_1">隐藏性肥胖</string>
+    <string name="more_weight_2">肌肉型肥胖</string>
+    <string name="more_weight_3">肥胖</string>
+    <string name="less_weight">消瘦</string>
+    <string name="normal_weight">标准</string>
+    <string name="fat_anayzie">体脂分析</string>
+    <string name="li_value">理想值:%1$s</string>
+    <string name="title_activity_draginfo">DraginfoActivity</string>
+    <string name="title_activity_scan_drag">ScanDragActivity</string>
+    <string name="title_activity_drag">DragActivity</string>
+
+    <!-- 分享 -->
+    <string name="share_ok">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_cancel">分享取消</string>
+    <string name="share_denied">分享拒绝</string>
+
+    
+     <!-- 设备绑定 -->
+    <string name="device_bp_beilis">BL-B918</string>
+    <string name="device_bp_bioland">2005-3</string>
+    <string name="device_bg_sinocare">G-427G</string>
+    <string name="device_bp">无线智能血压计</string>
+    <string name="device_bg">无线智能血糖仪</string>
+    <string name="want_to_buy">我想购买</string>
+    <string name="immediate_bind">立即绑定</string>
+    <string name="bind_device">绑定设备</string>
+    <string name="unbind_device">解除绑定</string>
+    <string name="device_unbind">解绑设备</string>
+    <string name="bind_device_success">绑定成功!</string>
+    <string name="bind_device_error">绑定失败!</string>
+    <string name="unbind_device_success">解绑成功!</string>
+    <string name="unbind_device_whether">确定解绑该设备？</string>
+    <string name="bind_device_error_reason">原因：您输入的设备码有误， 请核对后重新输入或扫码， 或者该设备码已绑定， 不可重复绑定。</string>
+    <string name="wechat_scan_info">帮助顾客通过微信扫一扫可成为他的健康专员哦</string>
+    <string name="scan_info">将二维码/条形码放置框内，即开始扫描</string>
+    <string name="scan_add">扫码添加</string>
+    <string name="wechat_bind">绑定微信</string>
+    <string name="device_bind">绑定设备</string>
+    <string name="have_bind">已绑</string>
+    <string name="bp_beilis_desc">
+        注：设备号哪里找？ \n
+        如果您已经拥有一台蓝信康GPRS血压计， 设备号位于血压计背面， 请将设备反转， 并且输入十四位条码数字。
+    </string>
+    <string name="bp_bioland_desc">
+        注：设备号哪里找？ \n
+        如果您已经拥有一台蓝信康GPRS血压计， 设备号位于血压计背面， 请将设备反转， 并且输入S/N开头十位数字编码。
+    </string>
+    <string name="bg_sinocare_desc">
+       注：设备号哪里找？ \n
+       如果您已经拥有一台蓝信康GPRS血糖仪， 设备号位于外包装背面右下角， 第一个S/N开头十位编码。
+    </string>
+    
+    <!-- health record -->
+    <string name="unit">单位</string>
+    <string name="buy_num">购买量</string>
+    <string name="times">&#160;次</string>
+    <string name="one_day">一天</string>
+    <string name="time_dosage">时间/剂量</string>
+    <string name="forenoon">上午</string>
+    <string name="afternoon">下午</string>
+    <string name="nightfall">傍晚</string>
+    <string name="medication_remind">用药提醒</string>
+    <string name="scan_case">浏览病例</string>
+    <string name="view_case">查看病例</string>
+    <string name="scan_medication">浏览用药</string>
+    <string name="medication_info">用药信息</string>
+    <string name="input_medication_info">输入用药信息</string>
+    <string name="view_medication_info">查看我的用药信息</string>
+    <string name="view_medication">查看用药</string>
+    <string name="view_drug">查看药物</string>
+    <string name="photo_upload_medication">拍照上传用药</string>
+    <string name="speech_upload_medication">语音上传用药</string>
+    <string name="drug_allergy_history">药物过敏史</string>
+    <string name="medication_contrain_dication">用药禁忌症</string>
+    <string name="medical_info">体检信息</string>
+    <string name="disease_history">疾病史</string>
+    <string name="hypertension_type">高血压类</string>
+    <string name="hypertension_complication">高血压并发症</string>
+    <string name="diabetes_type">糖尿病类</string>
+    <string name="diabetes_complication">糖尿病并发症</string>
+    <string name="high_chol">高血脂</string>
+    <string name="cardio_cerebro_disease">心脑血管疾病</string>
+    <string name="medication_history">服药史</string>
+    <string name="habit">习惯</string>
+    <string name="labour_lever">劳动强度</string>
+    <string name="home_device">家用设备</string>
+    <string name="search">搜索</string>
+    <string name="sorry_no_drug">抱歉，未找到您所需的药品</string>
+    <string name="immediate_add">立即添加</string>
+    <string name="start_speech">开始说话</string>
+    <string name="end_speech">说完了</string>
+    <string name="drug_name">药名</string>
+    <string name="input_drug_name">请输入药品名称</string>
+    <string name="produce">生产</string>
+    <string name="input_produce_factory">请输入生产厂家</string>
+    <string name="specification">规格</string>
+    <string name="input_drug_specification">请输入药物规格</string>
+    <string name="centimeter">厘米</string>
+    <string name="kilogram">公斤</string>
+    <string name="add_medication_info">添加我的用药信息</string>
+    <string name="recent_without_medication">近期不用药</string>
+    <string name="add_drug">添加药物</string>
+    
+    
+</resources>

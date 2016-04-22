@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" >
+
+    <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:padding="0dp" >
+
+        <LinearLayout
+                android:id="@+id/dialog_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_dialog_title_bar_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip"
+                android:visibility="gone" >
+
+            <ImageView
+                    android:id="@+id/title_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone" />
+
+            <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/base_dialog_title_text"
+                    android:textSize="@dimen/title_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/dialog_title_space_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/list_divider"
+                android:orientation="vertical" />
+
+        <ScrollView
+                android:id="@+id/dialog_scroll_body"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:scrollbars="none" >
+
+            <LinearLayout
+                    android:id="@+id/dialog_body"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_dialog_content_bg"
+                    android:gravity="center"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal"
+                    android:padding="10dip"
+                    android:visibility="gone" >
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+                android:id="@+id/dialog_fix_body"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/base_dialog_content_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dip"
+                android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/dialog_space_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/list_divider"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+        <LinearLayout
+                android:id="@+id/dialog_botton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_dialog_button_bar_bg"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

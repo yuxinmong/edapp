@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:clipToPadding="true"
+    android:fitsSystemWindows="true" 
+    android:background="@color/comm_tilte_background">
+  <include
+          android:id="@+id/title"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          layout="@layout/common_titlebar"
+           />
+    
+  <HorizontalScrollView 
+	    android:id="@+id/hsv_view"
+	    android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:fadingEdge="@null"
+		android:scrollbars="none"
+		android:background="@android:color/white"
+	 >
+	    <RelativeLayout 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			
+		>
+			    <ImageView
+				android:id="@+id/img1"
+				android:layout_width="100dp"
+				android:layout_height="4dp"
+				android:background="@color/able"
+				android:layout_alignParentBottom="true"
+				/>
+			      <RelativeLayout 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+		>
+		    <LinearLayout 
+		        android:id="@+id/menu_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:orientation="horizontal"
+		        android:gravity="center_vertical"
+		        ></LinearLayout>
+	</RelativeLayout>
+		    </RelativeLayout>
+		    
+	</HorizontalScrollView>
+	  <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/pager"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	    
+	</android.support.v4.view.ViewPager>
+    
+</LinearLayout>

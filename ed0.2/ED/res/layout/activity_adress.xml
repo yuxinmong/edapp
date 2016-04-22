@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:fitsSystemWindows="true"
+    android:clipToPadding="true" 
+    
+       android:background="@color/comm_tilte_background" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@color/white_background" >
+   
+  <include
+            android:id="@+id/comm_title_bar"
+            layout="@layout/common_titlebar"
+                    android:layout_height="47dp"
+            android:layout_width="match_parent" />
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/line" />
+      <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+             android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:divider="@color/line"
+        listSelector="@color/line" 
+        android:dividerHeight="1dp"
+        android:background="@color/white_background">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+<TextView
+            android:id="@+id/add_adresslv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/able"
+            android:gravity="center"
+            android:text="+添加收货地址"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/normal_font"
+            android:layout_alignParentBottom="true"
+             />
+
+</RelativeLayout>

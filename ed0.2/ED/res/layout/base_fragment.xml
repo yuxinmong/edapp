@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_background"
+                android:orientation="vertical">
+
+    <FrameLayout
+            android:id="@+id/rootContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <RelativeLayout
+            android:id="@+id/loadingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4444"
+            android:clickable="true"
+            android:visibility="gone">
+
+        <LinearLayout
+                android:id="@+id/progressView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_progress_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="8dp">
+
+            <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/Progress.loading"/>
+
+            <TextView
+                    android:id="@+id/textLoading"
+                    style="@style/progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btnReload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="重新加载"
+                android:textSize="14dp"
+                android:textColor="@color/gray_text"
+                android:background="@drawable/selector_button_bg_default"/>
+    </RelativeLayout>
+
+</RelativeLayout>
