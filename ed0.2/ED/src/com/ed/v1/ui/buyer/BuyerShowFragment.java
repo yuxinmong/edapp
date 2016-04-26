@@ -63,6 +63,8 @@ public class BuyerShowFragment extends BaseFragment implements OnClickListener,
 			datas.add("1");
 		}
 		initGridList();
+		jion.setOnClickListener(this);
+
 	}
 
 	private void initGridList() {

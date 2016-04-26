@@ -9,6 +9,7 @@ import java.util.TimeZone;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.umeng.socialize.PlatformConfig;
 
 import android.app.Application;
 import android.content.pm.ApplicationInfo;
@@ -31,7 +32,7 @@ public class CLApplication extends Application {
 	public void onCreate() {
 		super.onCreate();
 		CLApplication.instance = this;
-
+		Share ();
 		instance = this;
 		ImageLoaderConfiguration configuration = ImageLoaderConfiguration
 				.createDefault(this);
@@ -53,7 +54,14 @@ public class CLApplication extends Application {
 	}
 
 
-
+public void  Share (){
+	   PlatformConfig.setWeixin("wx967daebe835fbeac", "5bb696d9ccd75a38c8a0bfe0675559b3");
+       //璞嗙摚RENREN骞冲彴鐩墠鍙兘鍦ㄦ湇鍔″櫒绔厤缃�
+       //鏂版氮寰崥
+       PlatformConfig.setSinaWeibo("3921700954", "04b48b094faeb16683c32669824ebdad");
+       //鏄撲俊
+     
+}
 	public boolean getLoggingSwitch() {
 		try {
 			ApplicationInfo appInfo = getPackageManager().getApplicationInfo(

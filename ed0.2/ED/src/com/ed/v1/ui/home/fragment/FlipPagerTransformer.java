@@ -7,7 +7,9 @@ import android.support.v4.view.ViewPager;
 public class FlipPagerTransformer implements ViewPager.PageTransformer  
 {  
 	private float mDensity;
-
+	FlipPagerTransformer(){
+		
+	}
 	@Override
 	public void transformPage(View page, float position) {
         if(position <= 0 && position >= -1){

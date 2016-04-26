@@ -151,11 +151,7 @@ public class UPToTopActivity extends BaseFragmentActivity implements
 				// TODO Auto-generated method stub
 				int inputLengh = s.length();
 				input_count.setText(inputLengh+"/100");
-				if(inputLengh==100){
-					input_view.setEnabled(false);
-				}else{
-					input_view.setEnabled(true);
-				}
+			
                 
 			}
 		});
@@ -261,28 +257,25 @@ public class UPToTopActivity extends BaseFragmentActivity implements
 			@Override
 			public void onItemClick(AdapterView<?> parent, View v,
 					int position, long id) {
-				if (imageItem.size() == 4) { // 第一张为默认图片
-					Toast.makeText(UPToTopActivity.this, "图片数3张已满",
-							Toast.LENGTH_SHORT).show();
-				} else if (position == imageItem.size() - 1) { // 点击图片位置为+
-																// 0对应0张图片
-					/*
-					 * Toast.makeText(UPToTopActivity.this, "添加图片",
-					 * Toast.LENGTH_SHORT).show(); //选择图片 Intent intent = new
-					 * Intent(Intent.ACTION_PICK,
-					 * android.provider.MediaStore.Images
-					 * .Media.EXTERNAL_CONTENT_URI);
-					 * startActivityForResult(intent, IMAGE_OPEN);
-					 */
-					// 通过onResume()刷新数据
-					bigPicPath = userImage;
-					// changeDialog();
-					setTheme(R.style.ActionSheetStyleiOS7);
-					showHeaderSheet();
+			
+				if(imageItem.size()==4){
+					 if ( position == imageItem.size() - 1) { // 点击图片位置为+
+						    
 
-				} else {
-					poupImag(v);
+						} else {
+							poupImag(v);
+						}
+				}else{
+					 if ( position == imageItem.size() - 1) { // 点击图片位置为+
+							bigPicPath = userImage;
+							setTheme(R.style.ActionSheetStyleiOS7);
+							showHeaderSheet();
+
+						} else {
+							poupImag(v);
+						}
 				}
+			
 
 			}
 		});

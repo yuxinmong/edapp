@@ -33,7 +33,6 @@ import com.ed.v1.ui.userinfo.ThreeDActivity;
 import com.ed.v1.ui.userinfo.UserInfoActivity;
 import com.ed.v1.ui.userinfo.UserLikeActivity;
 import com.ed.v1.ui.userinfo.UserSetActivity;
-import com.example.zhy_horizontalscrollview03.BuyerShowGalleryActivity;
 
 public class MyFragment extends BaseFragment implements OnClickListener {
 	@Res(R.id.user_tokens)

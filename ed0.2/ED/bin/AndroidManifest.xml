@@ -66,7 +66,7 @@
         android:name="getui.permission.GetuiService.com.carelinker.pharmacy.v2"
         android:protectionLevel="normal" >
     </permission>
-<!--  imageloader -->
+    <!-- imageloader -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- Include next permission if you want to allow UIL to cache images on SD card -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -93,6 +93,21 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <!-- QQ、QQ空间所需权限 -->
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
 
     <application
         android:name=".CLApplication"
@@ -105,6 +120,7 @@
         <meta-data
             android:name="ALPHA"
             android:value="true" />
+ 
 
         <activity
             android:name=".ui.main.HomeTabActivity"
@@ -127,8 +143,6 @@
                 android:screenOrientation="portrait" >
         </activity>
         -->
-
-  
 
 
         <!-- userinfo -->
@@ -210,42 +224,115 @@
             android:name=".ui.userinfo.ThreeDActivity"
             android:label="@string/userinfo"
             android:launchMode="singleTop"
-             android:theme="@style/translucent" />
-          <activity
+            android:theme="@style/translucent" />
+        <activity
             android:name=".ui.userinfo.ApplyBackActivity"
             android:label="@string/userinfo"
             android:launchMode="singleTop"
-             android:theme="@android:style/Theme.Light.NoTitleBar" />
-            <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
             android:name=".ui.userinfo.AboutActivity"
             android:label="@string/userinfo"
             android:launchMode="singleTop"
-             android:theme="@android:style/Theme.Light.NoTitleBar" />
-              <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
             android:name=".ui.userinfo.HelpActivity"
             android:label="@string/userinfo"
             android:launchMode="singleTop"
-             android:theme="@android:style/Theme.Light.NoTitleBar" />
-                    <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
             android:name=".ui.userinfo.BandPhoneActivity"
             android:label="@string/userinfo"
             android:launchMode="singleTop"
-             android:theme="@android:style/Theme.Light.NoTitleBar" />
-                             <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
             android:name=".ui.userinfo.UpdataUserinfoActivity"
             android:label="@string/userinfo"
             android:launchMode="singleTop"
-             android:theme="@android:style/Theme.Light.NoTitleBar" />
-                                             <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
             android:name=".ui.userinfo.ServiceActivity"
             android:label="@string/userinfo"
             android:launchMode="singleTop"
-             android:theme="@android:style/Theme.Light.NoTitleBar" />
-                                                                               <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
             android:name=".ui.userinfo.OderInfoActivity"
             android:label="@string/userinfo"
             android:launchMode="singleTop"
-             android:theme="@android:style/Theme.Light.NoTitleBar" />
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.ed.v1.ui.userinfo.ConfirmOrderActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity><activity
+            android:name="com.king.photo.activity.ImageGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.king.photo.activity.TestPicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity
+            android:name="com.king.photo.activity.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.king.photo.activity.AlbumActivity"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity android:name="com.king.photo.activity.ImageFile" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity android:name="com.king.photo.activity.ShowAllPhoto"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity android:name="com.king.photo.activity.PictureGalleryActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity android:name="com.king.photo.activity.TakeActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+     <activity
+            android:name="com.umeng.soexample.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+     <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+<activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        <service 
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false">
+        </service>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+                <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="561cae6ae0f55abd990035bf" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+        <service android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
     </application>
 
 </manifest>

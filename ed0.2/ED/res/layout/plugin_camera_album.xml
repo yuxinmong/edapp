@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/comm_tilte_background"
+    android:clipChildren="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+ >
+
+    <RelativeLayout
+        android:id="@+id/headview"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/plugin_camera_title_bar"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="3dp"
+        >
+           <include
+        android:id="@+id/comm_title_bar"
+        layout="@layout/common_titlebar"
+        android:layout_height="47dp"
+        android:layout_width="match_parent"/>
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white_background"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+>
+         <TextView 
+             android:id="@+id/camara"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:drawableTop="@drawable/camara"
+             android:text="拍摄照片"
+             android:gravity="center"
+             android:textSize="18sp"
+             android:drawablePadding="5dp"/>
+         
+    </RelativeLayout>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/myGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_background"
+        android:fadeScrollbars="false"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:numColumns="4" 
+/>
+
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_photo" 
+        android:textColor="@color/black"
+       android:visibility="gone"
+  />
+
+</LinearLayout>

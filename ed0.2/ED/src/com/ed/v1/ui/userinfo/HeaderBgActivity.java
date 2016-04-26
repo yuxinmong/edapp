@@ -31,6 +31,7 @@ import com.ed.v1.base.BaseFragmentActivity;
 import com.ed.v1.common.viewholder.Res;
 import com.ed.v1.common.widget.RoundImageView;
 import com.ed.v1.ui.home.fragment.ShowAdapter;
+import com.ed.v1.util.CommonUtil;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
@@ -60,6 +61,7 @@ public class HeaderBgActivity extends BaseFragmentActivity implements
 
 	private void initTitile() {
 		// TODO Auto-generated method stub
+		CommonUtil.setTranslucentStatus(this);
 		mText_TitleFinish.setOnClickListener(this);
 		mText_Titleinfo.setText("选择头像背景");
 		mBtnBack.setOnClickListener(this);
@@ -69,7 +71,7 @@ public class HeaderBgActivity extends BaseFragmentActivity implements
 	@Override
 	protected void init(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-
+CommonUtil.setTranslucentStatus(this);
 		initTitile();
 		initDatas();
 		initPullToRefresh();

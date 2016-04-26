@@ -61,6 +61,7 @@
             android:paddingBottom="12dp" >
 
             <TextView
+                android:id="@+id/weixin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -71,6 +72,8 @@
                 android:textColor="@color/text_black" />
 
             <TextView
+                                android:id="@+id/friend"
+                
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -81,6 +84,8 @@
                 android:textColor="@color/text_black" />
 
             <TextView
+                                                android:id="@+id/weibo"
+                
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

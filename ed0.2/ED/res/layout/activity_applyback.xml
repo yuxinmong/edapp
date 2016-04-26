@@ -10,6 +10,11 @@
     <include
         android:id="@+id/comm_title_bar"
         layout="@layout/common_titlebar" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/infolv">
 
     <TextView
         android:layout_width="match_parent"
@@ -59,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/white_background" />
-
+</LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -95,6 +100,7 @@
             android:background="@drawable/shape_apply_back_black"
             android:textColor="@color/text_black"
             android:textSize="@dimen/normal_font" />
+       
     </RelativeLayout>
 
     <RelativeLayout
@@ -134,7 +140,8 @@
             android:layout_marginLeft="80dp"
             android:background="@drawable/shape_apply_back_black"
             android:textColor="@color/text_black"
-            android:textSize="@dimen/normal_font" />
+            android:textSize="@dimen/normal_font"
+            android:maxLength="200" />
     </RelativeLayout>
 
     <RelativeLayout

@@ -2,6 +2,7 @@ package com.ed.v1.ui.userinfo;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -11,6 +12,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -24,6 +26,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
@@ -55,6 +58,13 @@ import com.ed.v1.util.BitmapUtil;
 import com.ed.v1.util.BottomDialogUtils;
 import com.ed.v1.util.CommonUtil;
 import com.ed.v1.util.FileUtil;
+import com.king.photo.activity.AlbumActivity;
+import com.king.photo.activity.PictureGalleryActivity;
+import com.king.photo.util.Bimp;
+import com.king.photo.util.FileUtils;
+import com.king.photo.util.ImageItem;
+import com.king.photo.util.PublicWay;
+import com.king.photo.util.ResUtil;
 
 public class UserInfoActivity extends BaseFragmentActivity implements
 		OnWheelScrollListener, OnClickListener {
@@ -100,6 +110,8 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 	private int day = 0;
 	private String birthdayData;
 	private Handler handler = new Handler();
+	private static final int TAKE_PICTURE = 0x000001;
+
 	/**
 	 * 跳转拍照标识
 	 */
@@ -122,11 +134,14 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 	private String takePicName = null;
 	// 图片路径
 	private String bigPicPath;
-	private Bitmap bmp;
 
 	private String token;
 	private String imageUrl;
 	private NumericWheelAdapter dayAdapter;
+	private PopupWindow pop;
+	private LinearLayout ll_popup;
+	private ArrayList<ImageItem> headBmp;
+	public static Bitmap bmp;
 	public static String userImage = FileUtil.getSDPath() + "/ed/cache/image/";
 
 	private void initTitile() {
@@ -136,8 +151,6 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 		mBtnBack.setOnClickListener(this);
 
 	}
-
-	
 
 	@Override
 	protected int getContentViewId() {
@@ -149,11 +162,14 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 	protected void init(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		CommonUtil.setTranslucentStatus(this);
+		ResUtil.init(this);
 
+		PublicWay.activityList.add(this);
 		initTitile();
 		userInfo = DataCenter.getInstance().getUserInfo();
+		initPop();
 		initUserInfo();
-		findView(R.id.user_info_layout).setOnClickListener(this);
+		//findView(R.id.user_info_layout).setOnClickListener(this);
 		findView(R.id.user_sex_lt).setOnClickListener(this);
 		findView(R.id.user_age_lt).setOnClickListener(this);
 		user_mail_lt.setOnClickListener(this);
@@ -169,8 +185,22 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 					R.drawable.user_l), null);
 		}
 
-		
+	}
 
+	private void initPop() {
+		pop = new PopupWindow(UserInfoActivity.this);
+
+		View view = getLayoutInflater().inflate(R.layout.item_popupwindows,
+				null);
+
+		ll_popup = (LinearLayout) view.findViewById(R.id.ll_popup);
+
+		pop.setWidth(LayoutParams.MATCH_PARENT);
+		pop.setHeight(LayoutParams.WRAP_CONTENT);
+		pop.setBackgroundDrawable(new BitmapDrawable());
+		pop.setFocusable(true);
+		pop.setOutsideTouchable(true);
+		pop.setContentView(view);
 	}
 
 	@Override
@@ -178,7 +208,13 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.user_info_layout:
-
+			Intent intent1 = new Intent(UserInfoActivity.this,
+					AlbumActivity.class);
+			startActivity(intent1);
+			overridePendingTransition(R.anim.activity_translate_in,
+					R.anim.activity_translate_out);
+			pop.dismiss();
+			ll_popup.clearAnimation();
 			break;
 		case R.id.user_name_lt:
 			Intent intent = new Intent(getApplicationContext(),
@@ -193,7 +229,7 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 			startActivityForResult(intent2, RESULT_UPDATE_MAIL);
 			break;
 		case R.id.user_sex_lt:
-	
+
 			break;
 		case R.id.user_age_lt:
 			Intent intent3 = new Intent(getApplicationContext(),
@@ -211,17 +247,14 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 		}
 	}
 
-
-
 	private void UpdateImage() {
 		// TODO Auto-generated method stub
 		if (takePicName != null) {
-		
+
 		} else {
 			hideLoadingDialog();
 		}
 	}
-
 
 	protected int getSexNum(String sex) {
 		// TODO Auto-generated method stub
@@ -242,9 +275,6 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 			sex1 = "女";
 		return sex1;
 	}
-
-
-
 
 	public void showSexSheet() {
 		ActionSheet.createBuilder(this, getSupportFragmentManager())
@@ -280,13 +310,11 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 
 	}
 
-
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
 		super.onActivityResult(requestCode, resultCode, data);
 
-	
 		if (resultCode != RESULT_OK) {
 			return;
 		}
@@ -301,14 +329,36 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 		case RESULT_UPDATE_AGE:
 			input_user_age.setText(ss);
 			break;
+
 		default:
 			break;
 		}
 
-		
 	}
-
 	
+
+
+	@Override
+	protected void onRestart() {
+		if (Bimp.tempSelectBitmap.size() != 0) {
+			bmp=Bimp.tempSelectBitmap.get(0).getBitmap();
+			user_header
+					.setImageBitmap(bmp);
+		}
+		super.onRestart();
+
+	};
+
+	@Override
+	public void onResume() {
+		// TODO Auto-generated method stub
+		if (Bimp.tempSelectBitmap.size() != 0) {
+			bmp=Bimp.tempSelectBitmap.get(0).getBitmap();
+			user_header
+					.setImageBitmap(bmp);
+		}
+		super.onResume();
+	}
 
 	@Override
 	public void onScrollingStarted(WheelView wheel) {
@@ -336,5 +386,4 @@ public class UserInfoActivity extends BaseFragmentActivity implements
 		}
 	}
 
-	   
 }

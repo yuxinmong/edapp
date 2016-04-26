@@ -28,28 +28,31 @@ import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.View.OnFocusChangeListener;
+import android.view.View.OnTouchListener;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.SimpleAdapter;
+import android.widget.SimpleAdapter.ViewBinder;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.SimpleAdapter.ViewBinder;
 
 import com.ed.v1.R;
 import com.ed.v1.base.BaseFragmentActivity;
 import com.ed.v1.common.viewholder.Res;
 import com.ed.v1.common.widget.wheel.ActionSheet;
-import com.ed.v1.common.widget.wheel.NumericWheelAdapter;
 import com.ed.v1.common.widget.wheel.ActionSheet.ActionSheetListener;
+import com.ed.v1.common.widget.wheel.NumericWheelAdapter;
 import com.ed.v1.util.CommonUtil;
 import com.ed.v1.util.FileUtil;
 
@@ -61,6 +64,8 @@ public class ApplyBackActivity extends BaseFragmentActivity implements
 	TextView mText_TitleFinish;
 	@Res(R.id.btnBack)
 	LinearLayout mBtnBack;
+	@Res(R.id.infolv)
+	LinearLayout infolv;
 	@Res(R.id.apply_back_save)
 	TextView apply_back_save;
 	@Res(R.id.input_count)
@@ -126,6 +131,20 @@ public class ApplyBackActivity extends BaseFragmentActivity implements
 		initTitile();
 		initAddImag();
 		initEdit();
+		initLv();
+	}
+
+	private void initLv() {
+		// TODO Auto-generated method stub
+		getRootView().setOnTouchListener(new OnTouchListener() {
+			
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				// TODO Auto-generated method stub
+				v.requestFocus();
+				return false;
+			}
+		});
 	}
 
 	@Override
@@ -144,6 +163,22 @@ public class ApplyBackActivity extends BaseFragmentActivity implements
 		}
 	}
 	private void initEdit(){
+		input_view.setOnFocusChangeListener(new OnFocusChangeListener() {
+			
+			@Override
+			public void onFocusChange(View v, boolean hasFocus) {
+				// TODO Auto-generated method stub
+				if(hasFocus){
+					infolv.setVisibility(View.GONE);
+					apply_back_save.setVisibility(View.GONE);
+				}else{
+					infolv.setVisibility(View.VISIBLE);
+					apply_back_save.setVisibility(View.VISIBLE);
+
+
+				}
+			}
+		});
 		input_view.addTextChangedListener(new TextWatcher() {
 			
 			@Override
@@ -164,11 +199,7 @@ public class ApplyBackActivity extends BaseFragmentActivity implements
 				// TODO Auto-generated method stub
 				int inputLengh = s.length();
 				input_count.setText(inputLengh+"/200");
-				if(inputLengh==200){
-					input_view.setEnabled(false);
-				}else{
-					input_view.setEnabled(true);
-				}
+			
                 
 			}
 		});
