@@ -16,13 +16,13 @@ public class LoverText extends TextView {
 	private int disableColor;
 	private Context context;
 
-	@SuppressLint("NewApi")
-	public LoverText(Context context, AttributeSet attrs, int defStyleAttr,
-			int defStyleRes) {
-		super(context, attrs, defStyleAttr, defStyleRes);
-		initLove();
-		// TODO Auto-generated constructor stub
-	}
+//	@SuppressLint("NewApi")
+//	public LoverText(Context context, AttributeSet attrs, int defStyleAttr,
+//			int defStyleRes) {
+//		super(context, attrs, defStyleAttr, defStyleRes);
+//		initLove();
+//		// TODO Auto-generated constructor stub
+//	}
 
 	public LoverText(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);

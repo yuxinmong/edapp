@@ -1,24 +1,19 @@
 package com.ed.v1.ui.userinfo;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.BaseBundle;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.View.OnFocusChangeListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.GridView;
@@ -27,19 +22,11 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.SimpleAdapter.ViewBinder;
 
 import com.ed.v1.R;
 import com.ed.v1.base.BaseFragmentActivity;
-import com.ed.v1.common.CommonUtils;
 import com.ed.v1.common.viewholder.Res;
-import com.ed.v1.ui.buyer.UPToTopActivity;
-import com.ed.v1.ui.main.HomeTabActivity;
 import com.ed.v1.util.CommonUtil;
 
 public class ThreeDActivity extends BaseFragmentActivity implements

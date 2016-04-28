@@ -3,10 +3,7 @@ package com.ed.v1.ui.buyer;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.os.BaseBundle;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -14,26 +11,17 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.View.OnClickListener;
-import android.view.animation.Animation;
-import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.ed.v1.R;
 import com.ed.v1.base.BaseFragmentActivity;
-import com.ed.v1.common.SystemStatusManager;
 import com.ed.v1.common.viewholder.Res;
 import com.ed.v1.common.widget.MyToast;
-import com.ed.v1.ui.main.HomeTabActivity;
 import com.ed.v1.ui.userinfo.LoadImageUtil;
-import com.ed.v1.ui.userinfo.UserInfoActivity;
 import com.ed.v1.util.CommonUtil;
 import com.nostra13.universalimageloader.core.download.ImageDownloader.Scheme;
 
