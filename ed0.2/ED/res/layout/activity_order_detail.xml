@@ -61,28 +61,26 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" >
 
-                                 <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" >
-
-                            <ImageView
-                                android:id="@+id/dom1"
+                            <RelativeLayout
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:src="@drawable/order_finished" />
+                                android:layout_height="wrap_content" >
 
-                            <TextView
-                                android:id="@+id/domtext1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerInParent="true"
-                                android:gravity="center"
-                                android:text=""
-                                android:textColor="@color/color_white"
-                                android:textSize="16sp" />
-                        </RelativeLayout>
+                                <ImageView
+                                    android:id="@+id/img_dom1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/order_finished" />
 
+                                <TextView
+                                    android:id="@+id/tv_dom1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text=""
+                                    android:textColor="@color/color_white"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
                         </RelativeLayout>
 
                         <View
@@ -123,23 +121,22 @@
                             android:layout_weight="1"
                             android:background="@color/color_green" />
 
-                          <RelativeLayout
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" >
 
                             <ImageView
-                                android:id="@+id/dom2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:src="@drawable/order_finished" />
-
-                            <TextView
-                                android:id="@+id/domtext2"
+                                android:id="@+id/img_dom2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
-                                android:gravity="center"
+                                android:src="@drawable/order_finished" />
+
+                            <TextView
+                                android:id="@+id/tv_dom2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
                                 android:text=""
                                 android:textColor="@color/color_white"
                                 android:textSize="16sp" />
@@ -182,23 +179,23 @@
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:background="@color/color_green" />
-              <RelativeLayout
+
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" >
 
                             <ImageView
-                                android:id="@+id/dom3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:src="@drawable/order_finished" />
-
-                            <TextView
-                                android:id="@+id/domtext3"
+                                android:id="@+id/img_dom3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
-                                android:gravity="center"
+                                android:src="@drawable/order_finished" />
+
+                            <TextView
+                                android:id="@+id/tv_dom3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
                                 android:text=""
                                 android:textColor="@color/color_white"
                                 android:textSize="16sp" />
@@ -242,23 +239,22 @@
                             android:layout_weight="1"
                             android:background="@color/color_line" />
 
-                                 <RelativeLayout
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" >
 
                             <ImageView
-                                android:id="@+id/dom4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:src="@drawable/order_unfinished" />
-
-                            <TextView
-                                android:id="@+id/domtext4"
+                                android:id="@+id/img_dom4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
-                                android:gravity="center"
+                                android:src="@drawable/order_unfinished" />
+
+                            <TextView
+                                android:id="@+id/tv_dom4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
                                 android:text="4"
                                 android:textColor="@color/color_white"
                                 android:textSize="16sp" />
@@ -307,18 +303,17 @@
                             android:layout_height="wrap_content" >
 
                             <ImageView
-                                android:id="@+id/dom5"
+                                android:id="@+id/img_dom5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
                                 android:src="@drawable/order_unfinished" />
 
                             <TextView
-                                android:id="@+id/domtext5"
+                                android:id="@+id/tv_dom5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_centerInParent="true"
-                                android:gravity="center"
                                 android:text="5"
                                 android:textColor="@color/color_white"
                                 android:textSize="16sp" />

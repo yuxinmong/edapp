@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -23,6 +25,10 @@ public class AddAdressActivity extends BaseFragmentActivity implements
 	LinearLayout mBtnBack;
 	@Res(R.id.delete)
 	TextView delete;
+	@Res(R.id.img_baidu_map)
+	ImageView imgBaiduMap;
+	@Res(R.id.input_adress)
+	EditText etInputAddress;
 	@Override
 	protected int getContentViewId() {
 		// TODO Auto-generated method stub
@@ -35,7 +41,15 @@ public class AddAdressActivity extends BaseFragmentActivity implements
 		mText_Titleinfo.setText(ss);
 		mText_TitleFinish.setVisibility(View.VISIBLE);
 		mBtnBack.setOnClickListener(this);
+		imgBaiduMap.setOnClickListener(this);
 
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+		if(resultCode == 123){
+			etInputAddress.setText(intent.getStringExtra("address"));
+		}
 	}
 
 	@Override
@@ -60,7 +74,9 @@ public class AddAdressActivity extends BaseFragmentActivity implements
 		case R.id.btnBack:
 			finish();
 			break;
-
+		case R.id.img_baidu_map:
+			startActivityForResult(new Intent(AddAdressActivity.this,BaiduMapActivity.class),123);
+			break;
 
 		default:
 			break;

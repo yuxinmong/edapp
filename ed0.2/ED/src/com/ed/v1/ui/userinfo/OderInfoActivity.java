@@ -48,6 +48,16 @@ OnClickListener{
 	private TextView dom4;
 	@Res(R.id.dom5)
 	private TextView dom5;*/
+	private ImageView imgDom1;
+	private TextView tvDom1;
+	private ImageView imgDom2;
+	private TextView tvDom2;
+	private ImageView imgDom3;
+	private TextView tvDom3;
+	private ImageView imgDom4;
+	private TextView tvDom4;
+	private ImageView imgDom5;
+	private TextView tvDom5;
 	private View line11;//圆点点之间的线
 	private View line12;
 	private View line21;
@@ -119,7 +129,18 @@ OnClickListener{
 
 	private void registerComponent(){
 		tvPrediteTime = (TextView) findViewById(R.id.tv_predite_time);//预计到达时间
-
+		
+		imgDom1 = (ImageView) findViewById(R.id.img_dom1);
+		imgDom2 = (ImageView) findViewById(R.id.img_dom2);
+		imgDom3 = (ImageView) findViewById(R.id.img_dom3);
+		imgDom4 = (ImageView) findViewById(R.id.img_dom4);
+		imgDom5 = (ImageView) findViewById(R.id.img_dom5);
+		tvDom1 = (TextView) findViewById(R.id.tv_dom1);
+		tvDom2 = (TextView) findViewById(R.id.tv_dom2);
+		tvDom3 = (TextView) findViewById(R.id.tv_dom3);
+		tvDom4 = (TextView) findViewById(R.id.tv_dom4);
+		tvDom5 = (TextView) findViewById(R.id.tv_dom5);
+		
 		line11 = findViewById(R.id.line11);//圆点点之间的线
 		line12 = findViewById(R.id.line12);
 		line21 = findViewById(R.id.line21);

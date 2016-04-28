@@ -109,6 +109,10 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
 
+    <!-- 百度新增权限 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
     <application
         android:name=".CLApplication"
         android:allowBackup="true"
@@ -120,7 +124,9 @@
         <meta-data
             android:name="ALPHA"
             android:value="true" />
- 
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Ei4FxWwbG96Nhb7Yfe2P8aR5cXLM7C69" />
 
         <activity
             android:name=".ui.main.HomeTabActivity"
@@ -179,6 +185,12 @@
         </activity>
         <activity
             android:name="com.ed.v1.ui.userinfo.express.ExpressActivity"
+            android:label="@string/userinfo"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.ed.v1.ui.userinfo.BaiduMapActivity"
             android:label="@string/userinfo"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
@@ -263,7 +275,8 @@
         <activity
             android:name="com.ed.v1.ui.userinfo.ConfirmOrderActivity"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
-        </activity><activity
+        </activity>
+        <activity
             android:name="com.king.photo.activity.ImageGridActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
@@ -271,59 +284,67 @@
         <activity
             android:name="com.king.photo.activity.TestPicActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" 
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
             android:name="com.king.photo.activity.PhotoActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
             android:name="com.king.photo.activity.AlbumActivity"
-            android:screenOrientation="portrait" 
-            android:theme="@android:style/Theme.Light.NoTitleBar">
-        </activity>
-        <activity android:name="com.king.photo.activity.ImageFile" 
-            android:theme="@android:style/Theme.Light.NoTitleBar">
-        </activity>
-        <activity android:name="com.king.photo.activity.ShowAllPhoto"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
-        <activity android:name="com.king.photo.activity.PictureGalleryActivity" 
-            android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity
+            android:name="com.king.photo.activity.ImageFile"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
-        <activity android:name="com.king.photo.activity.TakeActivity" 
-            android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity
+            android:name="com.king.photo.activity.ShowAllPhoto"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
-     <activity
+        <activity
+            android:name="com.king.photo.activity.PictureGalleryActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.king.photo.activity.TakeActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
             android:name="com.umeng.soexample.wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-     <activity
+        <activity
             android:name=".WBShareActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity> 
-<activity
+        </activity>
+        <activity
             android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
             android:configChanges="keyboardHidden|orientation"
-            android:windowSoftInputMode="adjustResize"
-            android:exported="false" >
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
         </activity>
-        <service 
+
+        <service
             android:name="com.sina.weibo.sdk.net.DownloadService"
-            android:exported="false">
+            android:exported="false" >
         </service>
+
         <activity
             android:name="com.tencent.connect.common.AssistActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-                <meta-data
+
+        <meta-data
             android:name="UMENG_APPKEY"
             android:value="561cae6ae0f55abd990035bf" >
         </meta-data>
@@ -331,8 +352,17 @@
             android:name="UMENG_CHANNEL"
             android:value="Umeng" >
         </meta-data>
-        <service android:name="com.sina.weibo.sdk.net.DownloadService"
-            android:exported="false"></service>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+        
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
     </application>
 
 </manifest>
