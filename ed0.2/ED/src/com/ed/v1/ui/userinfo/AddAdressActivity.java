@@ -48,7 +48,8 @@ public class AddAdressActivity extends BaseFragmentActivity implements
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
 		if(resultCode == 123){
-			etInputAddress.setText(intent.getStringExtra("address"));
+			String addressName = intent.getStringExtra("addressName");
+			etInputAddress.setText(intent.getStringExtra("address")+"（"+addressName+"）");
 		}
 	}
 
